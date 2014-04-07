@@ -280,7 +280,7 @@ body {
   font-size: 16px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #F5E6E4; 
+  background-color: #F5EBE4; 
 }
 input,
 button,
@@ -356,7 +356,7 @@ hr {
 }
 h1 {
   font-family: 'Vollkorn', Georgia, Times, serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   color: inherit;
 }
@@ -451,7 +451,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 40px;
 }
 h2,
 .h2 {
@@ -4378,7 +4378,7 @@ a.list-group-item.active > .badge,
   padding: 30px;
   margin-bottom: 20px;
   color: inherit;
-  background-color: #E4F3F5;
+  background-color: #EDF0E7;
   box-shadow: 0 0 1em 1em #eee;
 }
 .jumbotron h1,
