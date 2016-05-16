@@ -1,0 +1,101 @@
+.bgvid {
+    background: url(../assets/3dracer.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p, small {
+    color: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: blanchedalmond;
+}
+
+.content {
+    padding-top: 10%;
+    margin-bottom: 21px;
+}
+
+a {
+    color: #b9e9fb;
+    -webkit-transition: color 0.2s false;
+    -webkit-transition-delay: ease-in;
+    -moz-transition: color 0.2s false ease-in;
+    -o-transition: color 0.2s false ease-in;
+    transition: color 0.15s ease-in;
+    text-shadow: none;
+}
+
+body {
+    background-color: rgba(91, 39, 85, 0.95);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.btn-toggle {
+    float: right;
+    padding: 8px 10px;
+    font-size: 20px;
+    background-color: #b9e9fb;
+    color: #333;
+    border-color: #ccc;
+    margin: 3%;
+}
+.btn-toggle:hover {
+    background-color: #43a5f9;
+    color: #333;
+    border-color: #adadad;
+}
+
+hr {
+    border-top: 5px solid #eee;
+}
+
+
+.glyphicon {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+h1 {
+    font-family: Georgia;
+    letter-spacing: 1px;
+}
+
+a:hover, a:focus {
+    color: #43a5f9;
+    text-decoration: none;
+}
+
+span.glyphicon.glyphicon-envelope {
+    color: white;
+}
+
+#CONTACT img, #CONTACT span {
+    margin-right: 5px;
+    padding: 0;
+    height: 20px;
+}
+
+#CONTACT span {
+    width: 20px;
+}
+
+.header a:hover {
+    /* text-decoration: none; */
+    /* color: #a99f91; */
+}
+
+.footer {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
