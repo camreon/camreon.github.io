@@ -1,29 +1,30 @@
 <!doctype html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Cameron Guthrie</title>
   </head>
-  <body>
-    <div class="jumbotron">
-        <header>
-          <h1>Cameron Guthrie</h1>
-          <p>Computer Science Undergrad at Georgia Tech</p>
-        </header>
-    </div>
-    <div class="container">
+  <body id="bg">
+    <button class="btn btn-toggle" id="bgToggle">
+      <span class="glyphicon glyphicon-picture"></span>
+    </button>
+
+    <div class="container content arch">
+      <div class="header">
+        <h1><a href="/">Cameron Guthrie</a></h1>
+        <p>software engineer living in Nashville, TN</p>
+      </div>
+      <div class="row"><div class="col-md-9"> <hr> </div></div>
+
       <div class="row">
         <div class="col-md-12">
-          <h3>
-          <a name="portfolio" class="anchor" href="#portfolio"><span class="octicon octicon-link"></span></a>ARCHITECTURE DESIGN</h3>
+          <h3>ARCHITECTURE DESIGN</h3>
           <a href="assets/arch_review.png"><img class="img-responsive" src="assets/arch_review.png"></img></a>
         </div>
       </div>
@@ -33,15 +34,16 @@
           <a href="assets/intervention_proposal.jpg"><img class="img-responsive" src="assets/intervention_proposal.jpg"></img></a>
         </div>
       </div>
-      
-      <hr>
-      <footer>
-      </footer>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-53240235-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

@@ -7,7 +7,7 @@
 }
 
 p, small {
-    color: #f8f8f8;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,18 +20,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #b9e9fb;
+    color: #aad1f3;
     -webkit-transition: color 0.2s false;
     -webkit-transition-delay: ease-in;
     -moz-transition: color 0.2s false ease-in;
     -o-transition: color 0.2s false ease-in;
     transition: color 0.15s ease-in;
     text-shadow: none;
+    background-color: rgba(99, 99, 99, 0.58);
+    padding: 4px 5px;
 }
 
 body {
     background-color: rgba(91, 39, 85, 0.95);
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 0.5px;
 }
 
@@ -39,7 +41,7 @@ body {
     float: right;
     padding: 8px 10px;
     font-size: 20px;
-    background-color: #b9e9fb;
+    background-color: white;
     color: #333;
     border-color: #ccc;
     margin: 3%;
@@ -74,13 +76,13 @@ span.glyphicon.glyphicon-envelope {
     color: white;
 }
 
-#CONTACT img, #CONTACT span {
+#INFO img, #INFO span {
     margin-right: 5px;
     padding: 0;
     height: 20px;
 }
 
-#CONTACT span {
+#INFO span {
     width: 20px;
 }
 
@@ -98,4 +100,31 @@ span.glyphicon.glyphicon-envelope {
 html {
     position: relative;
     min-height: 100%;
+}
+
+h1 > a {
+    background-color: transparent;
+    padding: 0;
+    font-size: inherit;
+}
+
+#PORTFOLIO a, #INFO a, #MISC a {
+    font-size: 18px;
+}
+
+#RESUME > a {
+    font-size: 24px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.arch a {
+    padding: initial;
+}
+
+.arch img {
+    border: #aad1f3 5px solid;
+    padding: 1px;
 }
