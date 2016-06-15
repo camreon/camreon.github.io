@@ -27,7 +27,7 @@ a {
     -o-transition: color 0.2s false ease-in;
     transition: color 0.15s ease-in;
     text-shadow: none;
-    background-color: rgba(99, 99, 99, 0.58);
+    background-color: rgba(99, 99, 99, 0.84);
     padding: 4px 5px;
 }
 

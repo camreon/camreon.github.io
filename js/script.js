@@ -9,4 +9,6 @@ function toggleBG() {
     bgToggle.addEventListener('click', function() {
         toggleBG();
     });
+
+    $('[data-toggle="tooltip"]').tooltip().tooltip('show');
 })();
