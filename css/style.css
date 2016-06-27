@@ -128,3 +128,12 @@ li {
     border: #aad1f3 5px solid;
     padding: 1px;
 }
+
+.tooltip-inner {
+    color: #000;
+    background-color: #fff;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #fff;
+}
