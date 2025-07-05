@@ -56,12 +56,6 @@ hr {
     border-top: 5px solid #eee;
 }
 
-
-.glyphicon {
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
 h1 {
     font-family: Georgia;
     letter-spacing: 1px;
@@ -72,23 +66,18 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-span.glyphicon.glyphicon-envelope {
+span.glyphicon {
     color: white;
 }
 
 #INFO img, #INFO span {
     margin-right: 5px;
-    padding: 0;
     height: 20px;
 }
 
-#INFO span {
-    width: 20px;
-}
-
 .header a:hover {
-    /* text-decoration: none; */
-    /* color: #a99f91; */
+    text-decoration: none; 
+    color: #a99f91; 
 }
 
 .footer {
