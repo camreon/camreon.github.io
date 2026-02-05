@@ -148,7 +148,8 @@ html {
 }
 
 #PORTFOLIO ul {
-    margin-right: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 ul {
@@ -158,6 +159,10 @@ ul {
 
 li {
     margin-bottom: 10px;
+}
+
+#PORTFOLIO li {
+    margin-bottom: 15px;
 }
 
 .arch a {
