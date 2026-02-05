@@ -1,4 +1,13 @@
-.bgvid {
+/* Hidden checkbox for CSS-only background toggle */
+.bg-toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Apply background when checkbox is checked */
+.bg-toggle-checkbox:checked~#bg,
+body:has(.bg-toggle-checkbox:checked) {
     background: url(../assets/3dracer.gif) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,17 +15,33 @@
     background-size: cover;
 }
 
-p, small {
+/* Hide .bg-text by default, show when checkbox is checked */
+.bg-text {
+    visibility: hidden;
+}
+
+body:has(.bg-toggle-checkbox:checked) .bg-text {
+    visibility: visible;
+    margin-bottom: 10px;
+}
+
+p,
+small {
     color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: blanchedalmond;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
 }
 
-.content {
-    padding-top: 10%;
-    margin-bottom: 21px;
+h3 {
+    text-decoration: underline;
+    margin-bottom: 15px;
 }
 
 a {
@@ -26,58 +51,90 @@ a {
     -moz-transition: color 0.2s false ease-in;
     -o-transition: color 0.2s false ease-in;
     transition: color 0.15s ease-in;
+    transition-delay: 0.1s;
     text-shadow: none;
     background-color: rgba(99, 99, 99, 0.84);
     padding: 4px 5px;
 }
 
 body {
-    background-color: rgba(91, 39, 85, 0.95);
-    font-size: 17px;
+    background-color: rgba(127, 43, 124, 0.95);
+    font-size: 16px;
     letter-spacing: 0.5px;
+}
+
+.content {
+    margin-bottom: 70px;
 }
 
 .btn-toggle {
     float: right;
-    padding: 8px 10px;
-    font-size: 20px;
-    background-color: white;
-    color: #333;
-    border-color: #ccc;
-    margin: 3%;
+    padding: 4px 5px 2px 5px;
+    color: white;
+    border-color: white;
+    margin: 20px;
+    cursor: pointer;
+    position: sticky;
+    top: 10px;
+    right: 0;
+    z-index: 1;
 }
+
 .btn-toggle:hover {
-    background-color: #43a5f9;
+    background-color: #43a4f9b1;
     color: #333;
     border-color: #adadad;
 }
 
 hr {
-    border-top: 5px solid #eee;
+    border-top: 2px solid #eee;
 }
 
-h1 {
-    font-family: Georgia;
-    letter-spacing: 1px;
-}
-
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #43a5f9;
     text-decoration: none;
 }
 
-span.glyphicon {
+a .glyphicon {
     color: white;
 }
 
-#INFO img, #INFO span {
-    margin-right: 5px;
-    height: 20px;
+svg path {
+    padding-bottom: 0px;
 }
 
-.header a:hover {
-    text-decoration: none; 
-    color: #a99f91; 
+.btn-toggle .bi-play {
+    color: white;
+    padding: 0px;
+}
+
+.btn-toggle:hover .bi-play {
+    color: white;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 130px;
+    font-size: 12px;
+    background-color: #43a4f9b1;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    right: 105%;
+}
+
+.btn-toggle:hover .tooltip-text {
+    visibility: visible;
+}
+
+.header {
+    margin-bottom: 40px;
 }
 
 .footer {
@@ -91,18 +148,17 @@ html {
     min-height: 100%;
 }
 
-h1 > a {
-    background-color: transparent;
-    padding: 0;
-    font-size: inherit;
+#PORTFOLIO ul {
+    margin-right: 30px;
 }
 
-#PORTFOLIO a, #INFO a, #MISC a {
-    font-size: 18px;
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .arch a {
